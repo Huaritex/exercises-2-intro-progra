@@ -7,7 +7,7 @@ using namespace std;
 void exercise_1(string s1) {
 
 for(int i = 0; <= string_s1.size(); ++i){
-if(string_s1{i} == ' '){
+if(string_s1[i] == ' '){
   cout << i << endl;
 }  
 cout << string_s1.size() << endl;

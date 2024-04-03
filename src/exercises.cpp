@@ -45,7 +45,7 @@ void exercise_7(int n) {
   int n = 3;
   double result;
   for(int i = 1; i <= n; i++){
-    result += pow((-1),i + 1)%i;
+    result += pow((-1),i + 1)/i;
   }
   cout << result << endl;
 

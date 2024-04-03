@@ -41,7 +41,7 @@ int exercise_6(int n) {
   return sum;
 }
 
-void exercise_7(int n) {
+void exercise_7(int n) {}
   
 
 void exercise_8(string s) {

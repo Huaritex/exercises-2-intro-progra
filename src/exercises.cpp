@@ -71,7 +71,7 @@ long exercise_13(int n, int k) {
   cin >> k;
   int result = 0;
   for(int f = 1; f <= n; f++){
-    result += pow(f,k)
+    result += pow(f,k);
   }
   return result;
 }

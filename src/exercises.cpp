@@ -159,7 +159,7 @@ void exercise_16(int divident, int divider) {
   int residuo = divident;
   int y = 0;
   if(divider != 0){
-    for(i; residuo - divider >= 0; ++y;){
+    for(y; residuo - divider >= 0; ++y;){
       residuo = residuo - divider;
     }
     conciente = y;

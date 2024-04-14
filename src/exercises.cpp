@@ -57,7 +57,7 @@ for(int i = 1; i <= k; i++){
 
   while(r <= 14){
     if( hueco.size() == t + (t * g) + g){
-      hueco = hueco + \n;
+      hueco = hueco + '\n';
       break;
     }
     ++g;

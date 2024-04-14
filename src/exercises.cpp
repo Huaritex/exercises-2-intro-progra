@@ -166,23 +166,23 @@ void exercise_18_19(int debut, int fin) {
   if(fin >= debut){
     if(debut > 0 && fin > 0){
       for(debut; debut <= fin; ++ debut){
-        int j = 0;
+        int i = 0;
         int debutando = debut;
         while(debutando != 0){
           if(debutando%3 == 0){
             debutando += 4;
-            ++j;
+            ++i;
           }
           else if(debutando%4 == 0){
-            debutando / = 2;
-            ++j;
+            debutando/=2;
+            ++i;
           }
           else{
-            -- debutando;
-            ++j;
+            --debutando;
+            ++i;
           }
         }
-        cout << debut << "->" << j << endl;
+        cout << debut << "->" << i << endl;
       }
       else{
         cout << "El numero debe ser positivo y mayor a cero" << endl;

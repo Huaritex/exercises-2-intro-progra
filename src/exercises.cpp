@@ -141,20 +141,20 @@ long exercise_13(int n, int k) {
   return result;
 }
 
-string exercise_14(int n) {
-  string n_string = to_string(n);
-  bool esPalindromo = true;
-  for(int i = 0; n_string.size() >= i; +i){
-    if(n_string[i] != n_string[n_string.size()-1-i]){
-      esPalindromo = false;
+string exercise_14(int barca) {
+    string barca_string = to_string(n);
+    bool esPalindromo = true;
+    for(int i=0; barca_string.size()>=i; ++i){
+     if(barca_string[i] != barca_string[barca_string.size()-1-i]){
+            esPalindromo = false;
+        }
     }
-  }
-  if(esPalindromo){
-    return "Es palindrome";
-  }
-  else{
-  return "No es palindrome";
-  }
+    if(esPalindromo){
+          return "Es palindrome";
+        }else{
+          return "No es palindrome";
+        }
+
 }
 
 void exercise_15(int decimal) {

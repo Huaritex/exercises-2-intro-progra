@@ -41,7 +41,15 @@ int exercise_6(int n) {
   return sum;
 }
 
-void exercise_7(int n) {}
+void exercise_7(int n) {
+  cin >> n;
+  double res = 0;
+  for(int i = 1; i <= n; i++){
+    res += pow(-1, i + 1)/i;
+  }
+  cout << res << endl;
+  }
+
   
 
 void exercise_8(string s) {

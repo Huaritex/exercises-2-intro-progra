@@ -26,61 +26,63 @@ void exercise_4(int n) {
 
 void exercise_5(int n, int k) {
   string hueco;
-  switch(n){
-    case 1:
-    hueco = " "s;
-    break;
-    case 2:
-    hueco = "  "s;
-    break;
-    case 3:
-    hueco = "   "s;
-    break;
-    case 4:
-    hueco = "    "s;
-    break;
-    case 5:
-    hueco = "     "s;
-    break;
-    case 6:
-    hueco = "      "s;
-    break;
-    case 7:
-    hueco = "       "s;
-    break;
-
-  }
-string f;
-for(int i = 1; i <= k; ++i){
-  int t = 20;
-  int g = 0;
-
-  while(r <= 14){
-    if( hueco.size() == t + (t * g) + g){
-      hueco = hueco + '\n';
+    switch(n){
+      case 1:
+      hueco = " "s;
+      break;
+      case 2:
+      hueco = "  "s;
+      break;
+      case 3:
+      hueco = "   "s;
+      break;
+      case 4:
+      hueco = "    "s;
+      break;
+      case 5:
+      hueco = "     "s;
+      break;
+      case 6:
+      hueco = "      "s;
+      break;
+      case 7:
+      hueco = "       "s;
       break;
     }
-    ++g;
-  }
-   if (n == 1 && hueco.size() == 1){
-    hueco = hueco + to_string(i); //lo busque en google la funcion, sirve para convertir una cadena ancha de entrada en una cadena string
-  }
-  else if(to_string(i).size() == 1 && hueco[hueco.size()-1] != '\n'){
-    f = " " + to_string(i);
-    hueco = hueco + f;
-  }
-  else if(to_string(i).size() == 1 && hueco[hueco.size()-1] == '\n'){
-    f = " " + to_string(i);
-    hueco = hueco + f;
-  }
-  else if(to_string(i).size() == 2 && hueco[hueco.size() -1] != '\n'){
-    hueco = hueco + to_string(i);
-  }
-  else if(to_string(i).size() == 2 && hueco[hueco.size() ] == '\n'){
-    hueco = hueco + to_string(i);
-  }
-} 
-cout << hueco << " " << endl;
+    
+    string _f;
+    for(int i = 1; i<=k; ++i){
+        int t = 20;
+        int g = 0;
+        while(r<=14){
+            if(hueco.size()== t+(t*g) + g){
+                hueco = hueco + '\n';
+                break;
+            }
+            ++r;
+        }
+        if(n ==1 && hueco.size()== 1){
+            hueco = hueco + to_string(i);
+        }
+        else if(to_string(i).size()==1 && hueco[hueco.size()-1]!='\n'){
+            _f = "  " + to_string(i);
+            hueco = hueco + _f;
+        }
+        else if(to_string(i).size()==1 && hueco[hueco.size()-1]=='\n'){
+            _f = " " + to_string(i);
+            hueco = hueco + _f;
+        
+        }
+        else if(to_string(i).size()==2 && hueco[hueco.size()-1]!='\n'){
+            _f = " " + to_string(i);
+            hueco = hueco + _f;
+        }
+        else if(to_string(i).size()==2 && hueco[hueco.size()-1]=='\n'){
+            hueco = hueco + to_string(i);
+        }
+        
+    }
+    cout << hueco << " " << endl;
 }
 
 

@@ -17,7 +17,7 @@ cout << s1.size() << endl;
 void exercise_2(string s1) {
   int bazooka = bazooka.size();
   string word;
-  int f = 0;
+  int i = 0;
   while(i <= bazooka){
     char sebas = s1[i];
 

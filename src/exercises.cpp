@@ -155,8 +155,20 @@ void exercise_15(int decimal) {
 }
 
 void exercise_16(int divident, int divider) {
-  // TODO: YOUR CODE HERE
+  int conciente = 0;
+  int residuo = divident;
+  int y = 0;
+  if(divider != 0){
+    for(i; residuo - divider >= 0; ++y;){
+      residuo = residuo - divider;
+    }
+    conciente = y;
+    cout << conciente << " ";
+    cout << residuo << endl;
+  }
+
 }
+
 
 void exercise_17(int n) {
   // TODO: YOUR CODE HERE

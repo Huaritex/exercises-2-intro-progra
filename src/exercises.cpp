@@ -33,7 +33,7 @@ void exercise_2(string wasap) {
 }
 
 void exercise_3(string cake) {
-  int h = 0;
+  int i = 0;
   while(i < 20){
     if(cake[i] == '1'){
       cout << "Om-nom-nom :P" << endl;

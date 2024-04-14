@@ -142,8 +142,19 @@ long exercise_13(int n, int k) {
 }
 
 string exercise_14(int n) {
-  // TODO: YOUR CODE HERE
-  return "";
+  string barca = to_string(n);
+  bool esPalindromo = true;
+  for(int i = 0; barca.size() >= i; +i){
+    if(barca[i] != barca[barca.size()-1-i]{
+      esPalindromo = false;
+    })
+  }
+  if(esPalindromo){
+    return "Es palindrome";
+  }
+  else{
+  return "No es palindrome";
+  }
 }
 
 void exercise_15(int decimal) {

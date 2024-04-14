@@ -143,12 +143,12 @@ void exercise_15(int decimal) {
   }
   else{
     for(int i = 0; decimal != 1; ++i){
-      binario = binario + to_string(decimal % 2);
-      decimal = decimal / 2;
+      binario = binario + to_string(decimal%2);
+      decimal = decimal/2;
     }
     binario = binario + '1';
     for(int i = 1; binario.size() >= i; ++i){
-      result = result + binario[binario.size()-1];
+      result = result + binario[binario.size()-i];
     }
   }
   cout << result << endl;

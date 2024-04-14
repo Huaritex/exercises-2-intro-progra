@@ -16,19 +16,22 @@ cout << s1.size() << endl;
 
 void exercise_2(string s1) {
   for(int i = 0; i <= s1.size(); ++i){
+if(s1[i] == '[
 
-    if(s1[i] == ' '){
-      cout << '[' s1.size() ']' << endl;
-    }
+]'){
+  cout << i << endl;
+}
   }
+cout << s1.size() << endl;
 }
 
+
 void exercise_3(string s1) {
-  // TODO: YOUR CODE HERE
+  
 }
 
 void exercise_4(int n) {
-  // TODO: YOUR CODE HERE
+
 }
 
 void exercise_5(int n, int k) {

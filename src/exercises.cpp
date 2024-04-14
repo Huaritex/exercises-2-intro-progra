@@ -172,21 +172,21 @@ void exercise_16(int divident, int divider) {
 
 void exercise_17(int n) {
   int i = 0; 
-    int  j = 2; 
+    int  w = 2; 
     
     while (n > i) {
         bool esPrimo = true;
         for (int i = 2; i <= k/2; ++i) {
-            if (j % i == 0) {
+            if (w % i == 0) {
                 esPrimo = false;
                 break; 
             }
         }
         if (esPrimo) {
-            cout << j << " "; 
+            cout << w << " "; 
             ++i; 
         }
-        ++k; 
+        ++w; 
     }
   }
 

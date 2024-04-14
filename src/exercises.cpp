@@ -32,7 +32,20 @@ void exercise_2(string wasap) {
   }
 }
 
-void exercise_3(string s1) {
+void exercise_3(string cake) {
+  int h = 0;
+  while(i < 20){
+    if(cake[i] == '1'){
+      cout << "Om-nom-nom :p" << endl;
+      i = i + 1;
+    }
+    else if(cake[i] == '0'){
+      cout << " no cake :(" << endl;
+    }
+    else{
+      i = 1 + 1;
+    }
+  }
   
 }
 

@@ -15,18 +15,18 @@ cout << s1.size() << endl;
 }
 
 void exercise_2(string s1) {
-  int bazooka = bazooka.size();
-  string word;
+  int bazooka_size = bazooka.size();
+  string bazooka_word;
   int i = 0;
-  while(i <= bazooka){
-    char sebas = s1[i];
+  while(i <= bazooka_size){
+    char sebas_char = s1[i];
 
-    if(sebas == ' ' || i == bazooka && s1 != ""){
-      cout << '[' << word << ']' << endl;
-      word = "";
+    if(sebas_char == ' ' || i == bazooka_size && s1 != ""){
+      cout << '[' << bazooka_word << ']' << endl;
+      bazooka_word = "";
     }
     else {
-      word = word + sebas;
+      bazooka_word = bazooka_word + sebas_char;
     }
     ++i;
   }

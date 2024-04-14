@@ -153,7 +153,28 @@ void exercise_7(int n) {
   
 
 void exercise_8(string s) {
-  // TODO: YOUR CODE HERE
+  int s_size = s.size();
+  string ss;
+  for(int i = 0; s_size - 1 >= i ; ++i){
+    char s_letra = s[i];
+    if(s_letra != ' '){
+      ss = ss + s_letra;
+    }
+  }
+  bool esPalindromo = true;
+  int l = ss.size();
+  for(int i = 0; i < n / 2; ++i){
+    if(ss[i] != ss[l - 1 - i]){
+      esPalindromo = false;
+      break;
+    }
+  }
+  if(esPalindromo){
+    cout << "YES" << endl;
+  }
+  else{
+    cout << "NO" << endl;
+  }
 }
 
 void exercise_9(string s) {

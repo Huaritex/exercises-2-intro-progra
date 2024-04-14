@@ -32,25 +32,25 @@ void exercise_2(string wasap) {
   }
 }
 
-void exercise_3(string cake) {
-  int i = 0;
-  while(i < 20){
-    if(cake[i] == '1'){
-      cout << "Om-nom-nom :P" << endl;
-      i = i + 1;
-    }
-    else if(cake[i] == '0'){
-      cout << " no cake :(" << endl;
-      break;
-    }
-    else{
-      i = 1 + 1;
-    }
-  }
-  
-}
+void exercise_3(string cake) {}
 
-void exercise_4(int n) {
+
+void exercise_4(int number) {
+  int h = 1;
+  int multiplicacion = 1;
+  if(number < 0){
+    cout << "El numero es negativo. Intentelo de nuevo" << endl;
+  }
+  else if(number > 14){
+    cout << "El numero es muy grande. Intentelo de nuevo" << endl;
+  }
+  else if(number >= 0 && number <= 14){
+    while(h <= number){
+      multiplicacion *= h;
+      ++h;
+    }
+    cout << multiplicacion << endl;
+  }
 
 }
 

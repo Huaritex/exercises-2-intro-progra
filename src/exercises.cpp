@@ -62,10 +62,10 @@ void exercise_9(string s) {
 int exercise_10(int a, int b) {
   int sus = 1;
   if(a == 0){
-    return 0;
+    return b;
   }
   else if (b == 0){
-    return 0;
+    return a;
   }
   else{
     for(int i = 2; a >= i && b >= i; i++){

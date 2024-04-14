@@ -41,6 +41,7 @@ void exercise_3(string cake) {
     }
     else if(cake[i] == '0'){
       cout << " no cake :(" << endl;
+      break;
     }
     else{
       i = 1 + 1;

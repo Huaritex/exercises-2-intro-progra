@@ -133,7 +133,25 @@ string exercise_14(int n) {
 }
 
 void exercise_15(int decimal) {
-  // TODO: YOUR CODE HERE
+  string binario;
+  string result;
+  if(decimal == 0){
+    result = '0';
+  }
+  else if(decimal == 1){
+    result = '1';
+  }
+  else{
+    for(int i = 0; decimal != 1; ++i){
+      binario = binario + to_string(decimal % 2);
+      decimal = decimal / 2;
+    }
+    binario = binario + '1';
+    for(int i = 1; binario.size() >= i; ++i){
+      result = result + binario[binario.size()-1];
+    }
+  }
+  cout << result << endl;
 }
 
 void exercise_16(int divident, int divider) {

@@ -182,7 +182,7 @@ void exercise_18_19(int debut, int fin) {
             ++j;
           }
         }
-        cout << debut << "-->" << j << endl;
+        cout << debut << "->" << j << endl;
       }
       else{
         cout << "El numero debe ser positivo y mayor a cero" << endl;

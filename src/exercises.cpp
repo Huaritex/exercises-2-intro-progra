@@ -51,7 +51,7 @@ void exercise_5(int n, int k) {
 
   }
 string f;
-for(int i = 1; i <= k; i++){
+for(int i = 1; i <= k; ++i){
   int t = 20;
   int g = 0;
 
@@ -73,7 +73,7 @@ for(int i = 1; i <= k; i++){
     f = " " + to_string(i);
     hueco = hueco + f;
   }
-  else if(to_string(i).size() == 2 && hueco[hueco.size() - 1] != '\n'){
+  else if(to_string(i).size() == 2 && hueco[hueco.size() -1] != '\n'){
     hueco = hueco + to_string(i);
   }
   else if(to_string(i).size() == 2 && hueco[hueco.size() ] == '\n'){

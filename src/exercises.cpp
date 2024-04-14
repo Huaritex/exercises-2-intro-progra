@@ -14,14 +14,14 @@ if(s1[i] == ' '){
 cout << s1.size() << endl;
 }
 
-void exercise_2(string s1) {
-  int bazooka_size = bazooka.size();
+void exercise_2(string wasap) {
+  int bazooka_size = wasap.size();
   string bazooka_word;
   int i = 0;
   while(i <= bazooka_size){
-    char sebas_char = s1[i];
+    char sebas_char = wasap[i];
 
-    if(sebas_char == ' ' || i == bazooka_size && s1 != ""){
+    if(sebas_char == ' ' || i == bazooka_size && wasap != ""){
       cout << '[' << bazooka_word << ']' << endl;
       bazooka_word = "";
     }

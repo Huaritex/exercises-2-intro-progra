@@ -69,7 +69,7 @@ for(int i = 1; i <= k; i++){
     f = " " + to_string(i);
     hueco = hueco + f;
   }
-  else if(to_string(i).size() == 1 && hueco[hueco.size()-1] != '\n'){
+  else if(to_string(i).size() == 1 && hueco[hueco.size()-1] == '\n'){
     f = " " + to_string(i);
     hueco = hueco + f;
   }
@@ -80,8 +80,8 @@ for(int i = 1; i <= k; i++){
     hueco = hueco + to_string(i);
   }
 } 
-
-  }
+cout << hueco << " " << endl;
+}
 
 
 int exercise_6(int n) {

@@ -25,64 +25,7 @@ void exercise_4(int n) {
 }
 
 void exercise_5(int n, int k) {
-  string hueco;
-    switch(n){
-      case 1:
-      hueco = " "s;
-      break;
-      case 2:
-      hueco = "  "s;
-      break;
-      case 3:
-      hueco = "   "s;
-      break;
-      case 4:
-      hueco = "    "s;
-      break;
-      case 5:
-      hueco = "     "s;
-      break;
-      case 6:
-      hueco = "      "s;
-      break;
-      case 7:
-      hueco = "       "s;
-      break;
-    }
-    
-    string _f;
-    for(int i = 1; i<=k; ++i){
-        int t = 20;
-        int g = 0;
-        while(r<=14){
-            if(hueco.size()== t+(t*g) + g){
-                hueco = hueco + '\n';
-                break;
-            }
-            ++r;
-        }
-        if(n ==1 && hueco.size()== 1){
-            hueco = hueco + to_string(i);
-        }
-        else if(to_string(i).size()==1 && hueco[hueco.size()-1]!='\n'){
-            _f = "  " + to_string(i);
-            hueco = hueco + _f;
-        }
-        else if(to_string(i).size()==1 && hueco[hueco.size()-1]=='\n'){
-            _f = " " + to_string(i);
-            hueco = hueco + _f;
-        
-        }
-        else if(to_string(i).size()==2 && hueco[hueco.size()-1]!='\n'){
-            _f = " " + to_string(i);
-            hueco = hueco + _f;
-        }
-        else if(to_string(i).size()==2 && hueco[hueco.size()-1]=='\n'){
-            hueco = hueco + to_string(i);
-        }
-        
-    }
-    cout << hueco << " " << endl;
+
 }
 
 
@@ -117,8 +60,23 @@ void exercise_9(string s) {
 }
 
 int exercise_10(int a, int b) {
-  // TODO: YOUR CODE HERE
-  return 0;
+  int sus = 1;
+  if(a == 0){
+    return 0;
+  }
+  else if (b == 0){
+    return 0;
+  }
+  else{
+    for(int i = 2; a >= i && b >= i; i++){
+      while(a % i == 0 && b % i == 0){
+        sus = sus * i;
+        a = a/i;
+        b = b/i;
+      }
+    } 
+  }
+  return sus;
 }
 
 void exercise_11() {

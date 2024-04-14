@@ -155,15 +155,15 @@ void exercise_15(int decimal) {
 }
 
 void exercise_16(int divident, int divider) {
-  int conciente = 0;
+  int cociente = 0;
   int residuo = divident;
   int i = 0;
   if(divider != 0){
     for(i; residuo - divider >= 0; ++i;){
       residuo = residuo - divider;
     }
-    conciente = i;
-    cout << conciente << " ";
+    cociente = i;
+    cout << cociente << " ";
     cout << residuo << endl;
   }
 

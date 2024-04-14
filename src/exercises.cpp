@@ -28,7 +28,7 @@ void exercise_2(string s1) {
     else {
       word = word + sebas;
     }
-    i++;
+    ++i;
   }
 }
 

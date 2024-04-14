@@ -175,7 +175,7 @@ void exercise_17(int n) {
   int j = 2;
   while(n > i){
     bool esPrimo = true;
-    for(int i = 2; i <= j / 2; ++i){
+    for(int i = 2; i <= j/2; ++i){
       if(j % i == 0){
         esPrimo = false;
         break;

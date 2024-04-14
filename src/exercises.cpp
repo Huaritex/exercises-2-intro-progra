@@ -25,7 +25,47 @@ void exercise_4(int n) {
 }
 
 void exercise_5(int n, int k) {
-  // TODO: YOUR CODE HERE
+  string hueco;
+  switch(n){
+    case 1:
+    hueco = " "s;
+    break;
+    case 2:
+    hueco = "  "s;
+    break;
+    case 3:
+    hueco = "   "s;
+    break;
+    case 4:
+    hueco = "    "s;
+    break;
+    case 5:
+    hueco = "     "s;
+    break;
+    case 6:
+    hueco = "      "s;
+    break;
+    case 7:
+    hueco = "       "s;
+    break;
+
+  }
+string f;
+for(int f = 1; f <= k; f++){
+  int t = 20;
+  int g = 0;
+
+  while(r <0 14){
+    if( hueco.size() == t + (t * g) + g){
+      hueco = hueco + \n;
+      break;
+    }
+    ++g;
+  }
+ 
+  }
+} 
+  }
 }
 
 int exercise_6(int n) {

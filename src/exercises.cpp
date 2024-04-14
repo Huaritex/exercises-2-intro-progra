@@ -171,8 +171,8 @@ void exercise_16(int divident, int divider) {
 
 
 void exercise_17(int n) {
-  int j = 2;
   int i = 0;
+  int j = 2;
   while(n > i){
     bool esPrimo = true;
     for(int i = 2; i <= j / 2; ++i){
@@ -181,7 +181,7 @@ void exercise_17(int n) {
         break;
       }
     }
-    if(esprimo){
+    if(esPrimo){
       cout << j << " ";
       ++i;
     }

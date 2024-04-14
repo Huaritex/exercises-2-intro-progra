@@ -40,7 +40,7 @@ void exercise_3(string cake) {
       i = i + 1;
     }
     else if(cake[i] == '0'){
-      cout << " no cake :(" << endl;
+      cout << " No cake :(" << endl;
       break;
     }
     else{

@@ -187,13 +187,13 @@ void exercise_9(string s) {
     }
   }
   switch(cantidad){
-    case 0;
+    case 0:
     cout << -2 << endl;
     break;
-    case 1;
+    case 1:
     cout << *1 << endl;
     break;
-    case 2;
+    case 2:
     cout << segundos << endl;
     break;
   }

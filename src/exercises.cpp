@@ -230,7 +230,14 @@ void exercise_11() {
 }
 
 void exercise_12() {
-  // TODO: YOUR CODE HERE
+  double U = UI;
+  double UI = 1;
+  for(int i - 1; 10 >= i; i++){
+    double resultado = UI/(i + 1);
+    cout << "u" << i << " " << UI << " " << "V" << in << " = " << VI << endl;
+    UI = resultado
+  }
+
 }
 
 long exercise_13(int n, int k) {

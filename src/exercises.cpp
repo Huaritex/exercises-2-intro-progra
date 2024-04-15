@@ -233,6 +233,7 @@ void exercise_12() {
   double U = UI;
   double UI = 1;
   for(int i - 1; 10 >= i; ++i){
+    int VI = U;
     double resultado = UI/(i + 1);
     cout << "U" << i << " = " << UI << " " << "V" << i << " = " << VI << endl;
     UI = resultado;

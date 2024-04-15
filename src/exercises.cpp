@@ -234,7 +234,7 @@ void exercise_12() {
   double UI = 1;
   for(int i - 1; 10 >= i; i++){
     double resultado = UI/(i + 1);
-    cout << "U" << i << " " << UI << " = " << "V" << in << " = " << VI << endl;
+    cout << "U" << i << " = " << UI << " " << "V" << in << " = " << VI << endl;
     UI = resultado
   }
 

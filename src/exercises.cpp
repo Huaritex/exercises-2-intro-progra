@@ -191,7 +191,7 @@ void exercise_9(string s) {
     cout << -2 << endl;
     break;
     case 1:
-    cout << *1 << endl;
+    cout << -1 << endl;
     break;
     case 2:
     cout << segundos << endl;

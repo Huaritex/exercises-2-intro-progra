@@ -143,7 +143,7 @@ int exercise_6(int n) {
 
 void exercise_7(int n) {
   if( r >= 0){
-    double volume = 4 * 3.14 * (r * r);
+    double volume = 4 * 3.14 * (r * r)
     cout << volume << endl;
   }
   else if(r < 0){

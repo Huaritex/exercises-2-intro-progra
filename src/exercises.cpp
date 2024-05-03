@@ -142,13 +142,12 @@ int exercise_6(int n) {
 }
 
 void exercise_7(int n) {
-  if( r >= 0){
-    double volume = 4 * 3.14 * (r * r)
-    cout << volume << endl;
+  cin >> n;
+  double res = 0;
+  for(int i = 1; i <= n; i++){
+    res += pow(-1, i + 1)/i;
   }
-  else if(r < 0){
-    cout << "error: radius cannot be negative" << endl;
-  }
+  cout << res << endl;
   }
 
   
